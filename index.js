@@ -12,7 +12,7 @@ const path = require('path');
 const crypto = require('crypto');
 const { EventEmitter } = require('events');
 
-// ─── Config ─────────────────────────────────────────────────────────────────
+// ─── Config ────────────────────────────────────────────────────────
 const PORT = process.env.PORT || 3000;
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
 const SESSIONS_DIR = path.join(DATA_DIR, 'sessions');
