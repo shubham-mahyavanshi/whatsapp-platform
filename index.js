@@ -14,7 +14,7 @@ const { EventEmitter } = require('events');
 
 // ─── Config ────────────────────────────────────────────────────────
 const PORT = process.env.PORT || 3000;
-const DATA_DIR = process.env.DATA_DIR || path.join('/tmp', 'whatsapp-data');
+const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'whatsapp-data');
 const SESSIONS_DIR = path.join(DATA_DIR, 'sessions');
 const CAMPAIGNS_DIR = path.join(DATA_DIR, 'campaigns');
 const HISTORY_DIR = path.join(DATA_DIR, 'history');
